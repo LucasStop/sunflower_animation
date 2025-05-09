@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Centro -->
+  <circle cx="16" cy="16" r="6" fill="#92400E"/>
+  
+  <!-- Pétalas -->
+  <g transform="translate(16 16)">
+    {Array.from({ length: 12 }).map((_, i) => `
+      <path
+        d="M0 -10L2 -4L0 -2L-2 -4Z"
+        fill="#FDE047"
+        transform="rotate(${i * 30})"
+      />
+    `)}
+  </g>
+  
+  <!-- Brilho -->
+  <circle cx="16" cy="16" r="5" fill="#FEF3C7" opacity="0.3"/>
+</svg>
